@@ -1,9 +1,9 @@
+import './style.scss'
 import { createApp } from "vue"
 import { renderWithQiankun, qiankunWindow, QiankunProps } from "vite-plugin-qiankun/dist/helper"
 import App from "./App.vue"
 import router from "./router"
 import elementplus from 'element-plus'
-
 // app.mount('#app')
 // renderWithQiankun： 为子应用导出一些生命周期函数 供主应用在特殊的时机调用
 // qiankunWindow： qiankunWindow.POWERED_BY_QIANKUN 可判断是否在qiankun环境下

@@ -5,3 +5,7 @@ import Layout from '@/Layout/index.vue'
 <template>
   <Layout></Layout>
 </template>
+
+<style lang="scss" scoped>
+  
+</style>

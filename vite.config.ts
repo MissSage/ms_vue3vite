@@ -4,7 +4,7 @@ import qiankun from "vite-plugin-qiankun"
 import { defineConfig } from "vite"
 
 export default defineConfig({
-  base: '/vue3/',
+  base: "/vue3/",
   plugins: [
     vue(),
     // qiankun的第一个参数必须与主应用在main.ts中registerMicroApps的name值一致
@@ -22,5 +22,8 @@ export default defineConfig({
     alias: {
       "@": fileURLToPath(new URL("./src", import.meta.url))
     }
+  },
+  build: {
+    cssCodeSplit: false
   }
 })
