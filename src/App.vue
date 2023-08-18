@@ -1,10 +1,6 @@
 <script setup lang="ts">
-import Layout from '@/Layout/index.vue'
 </script>
 
 <template>
-  <Layout></Layout>
+  <router-view></router-view>
 </template>
-<style>
-@import url('./style.css');
-</style>
