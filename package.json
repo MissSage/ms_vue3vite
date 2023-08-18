@@ -9,7 +9,6 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@arcgis/core": "^4.27.6",
     "axios": "^1.4.0",
     "element-plus": "^2.3.9",
     "vue": "^3.3.4",
@@ -20,6 +19,8 @@
     "@vitejs/plugin-vue": "^4.2.3",
     "sass": "^1.65.1",
     "typescript": "^5.0.2",
+    "unplugin-auto-import": "^0.16.6",
+    "unplugin-vue-components": "^0.25.1",
     "vite": "^4.4.5",
     "vite-plugin-qiankun": "^1.0.15",
     "vue-tsc": "^1.8.5"

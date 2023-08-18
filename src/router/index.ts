@@ -19,15 +19,7 @@ export const routes: RouteRecordRaw[] = [
     path: '/content',
     name: 'content',
     component: () => import('@/views/content/index.vue')
-  },
-  {
-    meta: {
-      title: 'Gis地图'
-    },
-    path: '/gis',
-    name: 'gis',
-    component: () => import('@/views/gis/index.vue')
-  },
+  }
 ];
 
 const router = createRouter({

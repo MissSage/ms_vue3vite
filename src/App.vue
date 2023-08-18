@@ -5,3 +5,6 @@ import Layout from '@/Layout/index.vue'
 <template>
   <Layout></Layout>
 </template>
+<style>
+@import url('./style.css');
+</style>

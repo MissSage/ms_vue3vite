@@ -2,7 +2,6 @@ import { createApp } from "vue"
 import { renderWithQiankun, qiankunWindow, QiankunProps } from "vite-plugin-qiankun/dist/helper"
 import App from "./App.vue"
 import router from "./router"
-import elementplus from 'element-plus'
 
 // app.mount('#app')
 // renderWithQiankun： 为子应用导出一些生命周期函数 供主应用在特殊的时机调用
@@ -32,7 +31,7 @@ const initQianKun = () => {
 const render = (container: string | null) => {
   // 如果是在主应用的环境下就挂载主应用的节点，否则挂载到本地
   const appDom = container ?? "#app_child_vue3"
-  createApp(App).use(router).use(elementplus).mount(appDom)
+  createApp(App).use(router).mount(appDom)
 }
 // 判断是否为乾坤环境，否则会报错[qiankun]: Target container with #subAppContainerVue3 not existed while subAppVue3 mounting!
 qiankunWindow.__POWERED_BY_QIANKUN__ ? initQianKun() : render(null)
